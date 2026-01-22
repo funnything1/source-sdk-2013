@@ -724,7 +724,7 @@ void CBasePlayer::PlayStepSound( Vector &vecOrigin, surfacedata_t *psurface, flo
 #endif
 
 	EmitSound_t ep;
-	ep.m_nChannel = CHAN_BODY;
+	ep.m_nChannel = CHAN_AUTO;
 	ep.m_pSoundName = params.soundname;
 #if defined ( TF_DLL ) || defined ( TF_CLIENT_DLL )
 	if( TFGameRules()->IsMannVsMachineMode() )
